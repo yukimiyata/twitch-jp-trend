@@ -6,21 +6,21 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 import Vue from "vue";
-import Vuetify from "vuetify"; // 追加
-import "vuetify/dist/vuetify.min.css"; // 追加
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
+import router from '../router/router';
 import App from "../app.vue";
 
-Vue.use(Vuetify); // 追加
-const vuetify = new Vuetify(); // 追加
+Vue.use(Vuetify);
+const vuetify = new Vuetify();
 
 document.addEventListener("DOMContentLoaded", () => {
   const app = new Vue({
-    vuetify, // 追加
+    vuetify,
+    router,
     render: h => h(App)
   }).$mount();
   document.body.appendChild(app.$el);
-
-  console.log(app);
 });
 
 
