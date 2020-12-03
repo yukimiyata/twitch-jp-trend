@@ -4,7 +4,6 @@ require 'json'
 module TwitchApi
   class TwitchApiData
     def twitch_api_data
-      secret = 'ueueq2ri561rl6mfor7jcvqi0jl8r2'
 
       url = 'https://api.twitch.tv/helix/streams?language=ja'
       headers = {
