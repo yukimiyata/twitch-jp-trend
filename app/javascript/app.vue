@@ -34,7 +34,7 @@
         </v-navigation-drawer>
 
         <v-main>
-            
+            <router-view />
         </v-main>
 
         <footer id="footer">
